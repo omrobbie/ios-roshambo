@@ -10,4 +10,8 @@ import UIKit
 
 class ChoiceViewController: UIViewController {
     
+    @IBAction private func playRock(_ sender: UIButton) {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController 
+        present(viewController, animated: true, completion: nil)
+    }
 }
