@@ -14,4 +14,8 @@ class ChoiceViewController: UIViewController {
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController 
         present(viewController, animated: true, completion: nil)
     }
+    
+    @IBAction private func playPaper(_ sender: UIButton) {
+        performSegue(withIdentifier: "play", sender: sender)
+    }
 }
