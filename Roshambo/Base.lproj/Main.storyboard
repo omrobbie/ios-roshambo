@@ -70,6 +70,9 @@
                                 <rect key="frame" x="140" y="530" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mainkan Lagi!"/>
+                                <connections>
+                                    <action selector="playAgain" destination="CfZ-x1-Cq2" eventType="touchUpInside" id="AZP-wZ-oIM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="Tyz-5K-O6V">
                                 <rect key="frame" x="67" y="78" width="240" height="240"/>
@@ -86,6 +89,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TT8-LO-V7m"/>
                     </view>
+                    <connections>
+                        <outlet property="resultImage" destination="Tyz-5K-O6V" id="38f-He-WlI"/>
+                        <outlet property="resultLabel" destination="gRU-ZA-qR7" id="ppi-9d-EfA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUZ-FT-BVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
